@@ -1,0 +1,106 @@
+/*
+=================================
+RESET and GENERAL
+=================================
+*/
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+picture,
+video,
+canvas {
+  display: block;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+:root {
+  --darkBrown: #2e323f;
+  --mediumBrown: #3b4050;
+  --lightBrown: #6f737f;
+  --white: #ffffff;
+  --grey: #a59678;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montessrat";
+  font-size: 1.3rem;
+}
+
+.container {
+  width: min(90%, 1300px);
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Oswald";
+}
+
+/*
+=================================
+Header
+=================================
+*/
+
+header {
+  padding: 1em 0;
+}
+.hero {
+  background-image: url("./images/Object.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+nav {
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+}
+.nav__list {
+  padding: 0;
+  margin: 0;
+}
+.logo-header {
+  margin-left: 1em;
+}
+.nav__item {
+  list-style: none;
+  font-size: 0.62em;
+  font-family: "Oswald";
+  margin-left: 2em;
+}
+
+.nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white);
+}
