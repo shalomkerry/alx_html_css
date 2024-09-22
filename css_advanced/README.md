@@ -1,1 +1,1 @@
-The following files include an html file and css file to make a good looking site for the smile
+The following files include an html file and css file to make a good looking site for the smileschool. I took time to do it. I used a lot of classes and also pseudo class properties to call the selected items onto css. It was good. 
