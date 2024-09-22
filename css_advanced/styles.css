@@ -34,14 +34,6 @@ h6 {
   overflow-wrap: break-word;
 }
 
-:root {
-  --darkBrown: #2e323f;
-  --mediumBrown: #3b4050;
-  --lightBrown: #6f737f;
-  --white: #ffffff;
-  --grey: #a59678;
-}
-
 body {
   padding: 0;
   margin: 0;
@@ -65,6 +57,16 @@ h4 {
   font-family: "Oswald";
 }
 
+button {
+  background-color: #c271ff;
+  border-radius: 25px;
+  padding: 0.62em 0.8em;
+  border: none;
+}
+
+.header-emphasis {
+  color: #c271ff;
+}
 /*
 =================================
 Header
@@ -79,9 +81,10 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: 1100px;
 }
 nav {
-  color: var(--white);
+  color: #ffffff;
   display: flex;
   justify-content: space-between;
 }
@@ -91,16 +94,156 @@ nav {
 }
 .logo-header {
   margin-left: 1em;
+  font-size: 1.2em;
 }
 .nav__item {
   list-style: none;
-  font-size: 0.62em;
+  font-size: 0.72em;
   font-family: "Oswald";
-  margin-left: 2em;
+  margin-left: 4em;
 }
 
 .nav__link {
   text-decoration: none;
   text-transform: uppercase;
-  color: var(--white);
+  color: white;
+}
+
+/*
+=================================
+Hero__section
+=================================
+*/
+main {
+  color: white;
+  border: 2px solid #071629;
+}
+
+.hero__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__header {
+  font-size: 6em;
+}
+.main__spans > span {
+  margin-left: 3em;
+}
+.main__spans ~ button {
+  margin-top: 1.2em;
+}
+.hero__top {
+  padding: 5em 0 10em 0;
+}
+
+.main__second-images {
+  display: flex;
+  justify-content: space-between;
+}
+.main__second-header {
+  text-align: center;
+  margin-bottom: 2em;
+  font-size: 1.4em;
+}
+
+.person:nth-child(3) > img {
+  border-radius: 50%;
+}
+
+/*
+=================================
+Testimonial 
+=================================
+*/
+
+.testimonial {
+  background-color: #c271ff;
+  padding: 4.2em 0;
+  margin-bottom: 3em;
+}
+
+.testimonial__image {
+  margin-left: 30px;
+}
+
+.testimonial__text {
+  width: 80%;
+  color: white;
+  margin-right: 30px;
+}
+
+.testimonial__container {
+  gap: 30px;
+}
+
+.testimonial__description {
+  font-weight: 200;
+}
+
+/*
+=================================
+Video 
+=================================
+*/
+
+.video-container {
+  position: relative;
+}
+
+.posterbutton {
+  position: absolute;
+  top: 40px;
+  left: 88px;
+  background: white;
+  padding: 0.035em 0.035em;
+  border-radius: 50%;
+}
+
+.gallery__header {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.rating_img {
+  width: 40px;
+}
+
+.rating__name {
+  margin-left: 0.45em;
+}
+
+/*
+
+=================================
+Free Membership 
+=================================
+*/
+.membership {
+  background: #071629;
+  margin-top: 2em;
+  padding: 5.2em 0;
+}
+
+.membership__title {
+  text-align: center;
+  margin-bottom: 1.2em;
+  color: white;
+  font-weight: 400;
+}
+
+.membership > .container > .row > div {
+  text-align: center;
+  color: white;
+}
+.membership > .container > .row > div > p {
+  color: blue;
+}
+
+.membership__button {
+  position: relative;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
