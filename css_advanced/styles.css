@@ -34,10 +34,14 @@ h6 {
   overflow-wrap: break-word;
 }
 
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("./fonts/SourceSansPro-Regular.otf") format("otf");
+}
 body {
   padding: 0;
   margin: 0;
-  font-family: "Montessrat";
+  font-family: "Source Sans Pro";
   font-size: 1.3rem;
 }
 
@@ -62,11 +66,13 @@ button {
   border-radius: 25px;
   padding: 0.62em 0.8em;
   border: none;
+  color: white;
 }
 
 .header-emphasis {
   color: #c271ff;
 }
+
 /*
 =================================
 Header
@@ -116,7 +122,6 @@ Hero__section
 */
 main {
   color: white;
-  border: 2px solid #071629;
 }
 
 .hero__section {
@@ -238,7 +243,7 @@ Free Membership
   color: white;
 }
 .membership > .container > .row > div > p {
-  color: blue;
+  color: hsl(0, 0%, 80%);
 }
 
 .membership__button {
@@ -246,4 +251,65 @@ Free Membership
   top: 80px;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/*
+=================================
+F.A.Q.
+=================================
+*/
+
+.faq {
+  gap: 20px;
+  color: hsla(0, 0%, 0%, 0.8);
+}
+
+.faq__section1 {
+  margin: 1em;
+}
+
+.header__dark {
+  margin: 2em 0 1em;
+}
+
+.faq__container {
+  width: 90%;
+}
+
+.faq__title {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 3.75rem;
+}
+
+/*
+=================================
+FOOTER
+=================================
+*/
+
+footer {
+  padding: 2.3em 0;
+  background-color: #071629;
+}
+
+footer > section > .container > .row {
+  justify-content: space-around;
+}
+
+.social {
+  gap: 1em;
+  display: flex;
+}
+.fa-brands {
+  border-radius: 50%;
+  color: #071629;
+  background-color: white;
+  padding: 0.43em;
+  font-size: 0.8em;
+}
+footer > section > p {
+  text-align: center;
+  margin-top: 1em;
+  color: white;
 }
