@@ -1,0 +1,335 @@
+/*
+=================================
+RESET and GENERAL
+=================================
+*/
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+picture,
+video,
+canvas {
+  display: block;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "source sans";
+  font-size: 1.3rem;
+}
+
+.container {
+  width: min(90%, 900px);
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "source sans";
+}
+
+/*
+=================================
+header
+=================================
+*/
+header {
+  color: white;
+}
+.hero {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.5) 80%,
+      rgba(0, 0, 0, 0.85) 100%
+    ),
+    url("./Images/headphones_hero_1.jpg");
+  background-size: cover;
+  background-position: 40%;
+  background-repeat: no-repeat;
+  padding-bottom: 200px;
+}
+
+.hamburger {
+  position: relative;
+  width: 20px;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  /* cursor: pointer; */
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.hamburger::after,
+.hamburger:before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  right: 0;
+  background: #fff;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.hamburger::after {
+  top: 10px;
+  width: 30px;
+}
+
+.hamburger:before {
+  top: -10px;
+  width: 30px;
+}
+
+.button input:checked ~ .hamburger {
+  background: transparent;
+}
+
+.button input:checked ~ .hamburger:after {
+  top: 0;
+  transform: rotate(45deg);
+  width: 30px;
+}
+
+.button input:checked ~ .hamburger:before {
+  top: 0;
+  transform: rotate(-45deg);
+  width: 30px;
+}
+
+.toggle-menu {
+  display: none;
+}
+.button {
+  position: relative;
+}
+.toggle-label {
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 10;
+  /* background-color: #2e323f; */
+}
+
+.mainhead {
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style: none;
+  margin-bottom: 1.25em;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #ffffff;
+  user-select: none;
+}
+
+.menu li a:hover {
+  cursor: pointer;
+  color: #ff6565;
+}
+
+.menu {
+  display: none;
+}
+
+.button input:checked ~ .menu {
+  display: block;
+}
+
+.navigation {
+  position: absolute;
+  width: 120px;
+  transform: translate(100%, 20%);
+}
+
+.intro__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.intro__text p:first-of-type {
+  margin-bottom: 1.25em;
+}
+h1 {
+  margin-top: 400px;
+  line-height: 0.9em;
+  margin-bottom: 0.125em;
+}
+
+button {
+  color: white;
+  background-color: #ff6565;
+}
+.main__button {
+  padding: 0.8em 1.7em;
+  border: none;
+  border-radius: 25px;
+  margin-bottom: 3em;
+}
+
+.intro__text p:nth-child(4) {
+  font-size: 19px;
+  line-height: 1.7em;
+  font-weight: lighter;
+}
+
+.nav__small {
+  display: none;
+}
+
+/*
+=================================
+What we Do section
+=================================
+*/
+
+.part1,
+.testimony,
+.contactus,
+footer,
+.testimony__intro {
+  text-align: center;
+}
+
+.part1 {
+  color: #071629;
+  padding: 5em 0;
+}
+
+.part1__intro h2 {
+  font-size: 32px;
+  margin-bottom: 0.5em;
+}
+
+.part1__intro p {
+  margin-bottom: 2em;
+}
+
+.icons {
+  color: #ff6565;
+}
+.part1__features h4 {
+  margin-bottom: 1em;
+  font-size: 1.234em;
+}
+/*
+=================================
+Testimony
+=================================
+*/
+
+.testimony {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.5) 80%,
+      rgba(0, 0, 0, 0.85) 100%
+    ),
+    url("./Images/headphones_hero_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 5em 0;
+  color: white;
+}
+
+.testimony__intro h2 {
+  line-height: 1.3em;
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+
+.testimony__intro {
+  margin-bottom: 6em;
+}
+.pentagon {
+  position: relative;
+}
+
+.pentagon:nth-of-type(n + 3) {
+  margin-top: 3em;
+}
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*
+=================================
+Contact Us
+=================================
+*/
+.contactus {
+  margin: 1em 0;
+  padding-top: 4em;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+
+  text-align: center;
+}
+
+input {
+  border: none;
+  width: 500px;
+  border-bottom: 1px solid black;
+}
+
+.input__button {
+  color: white;
+  background-color: #ff6565;
+  border: none;
+  padding: 0.8em 1.7em;
+  border-radius: 25px;
+  margin-bottom: 3em;
+  align-self: center;
+  width: 12em;
+  margin-top: 2em;
+}
+
+.input__button:hover {
+  cursor: pointer;
+}
